@@ -1,0 +1,29 @@
+<html>
+
+<body>
+    <h1>Const Js(constantes)</h1>
+    <p>una variable const se le debe asignar un valor cuando se la declara</p>
+    <script>
+        const a = 7
+    </script>
+    <h2>Objetos constantes</h2>
+    <p id="demo">Matrices constante</p>
+    <script>
+        const name = ["william", "fabricio", "tito", "vargas"]
+        name[0] = "guillermo"
+        name.push("alejandra")
+        document.getElementById("demo").innerHTML = name
+    </script>
+
+    <h2>Objetos constantes</h2>
+    <p id="object"></p>
+    <script>
+        const nombres = { name: "pedro", edad: 25, altura: 1.70 }
+        nombres.edad = 30
+        nombres.peso = 170.8
+        console.log(typeof (nombres.peso))
+        document.getElementById("object").innerHTML = "Mi nombres es " + nombres.name + " y mi peso es " + nombres.peso; 
+    </script>
+</body>
+
+</html>

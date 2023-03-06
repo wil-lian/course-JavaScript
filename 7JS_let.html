@@ -1,0 +1,62 @@
+<html>
+
+<body>
+    <h1>Las variables let</h1>
+    <p>no se las puede volver a declarar <br>
+        deben declararse antes de su uso <br>
+        tienen anbito de bloque</p>
+
+    <script>
+        // con let no se puede volver a declarar la variable
+        // let x = "william";
+        // let x = 5;
+
+        // con var se puede volver a declarar
+        var y = "fabricio"
+        var y = 6
+    </script>
+
+    <h2>Ambito del Bloque</h2>
+    <script>
+
+        {
+            let number = 2;
+        }
+        // con let no se puede utilizar fuera del bloque
+        // console.log(number)
+
+        {
+            var numero = 8;
+        }
+
+        console.log("Aqui esta el numero " + numero);
+    </script>
+
+    <h2>Redeclaracion de Variables</h2>
+    <script>
+        var z = 6;
+        {
+            var z = 9;
+        }
+        // aqui z se redelclara a 9
+        // console.log(z)
+
+        let t = 100;
+        // aqui let es 100
+        {
+            let t = 5
+            // aqui let es 5
+            console.log(t)
+        }
+        console.log(t)
+    </script>
+
+    <h2>Las variables var se pueden inicializar en cualquier momento</h2>
+    <script>
+        carName = "Toyota"
+        var carName
+    </script>
+
+</body>
+
+</html>
