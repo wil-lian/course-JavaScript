@@ -1,0 +1,30 @@
+<html>
+
+<body>
+    <h1>Salidas con JavaScript</h1>
+
+    <h2>Salidas con innerHTML</h2>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "Esto es un parrafo " + (5 + 6);
+    </script>
+
+    <h2>Salida con document.write</h2>
+    <p>Escribe directamente en el documento</p>
+    <script>
+        document.write(5 + 9)
+    </script>
+
+    <h2>El metodo document.write elimina todo el documento</h2>
+    <button type="button" onclick="document.write(5+4)">Precioname</button>
+
+    <h2>Salida con windows.alert</h2>
+    <h3>Muestra una cuadro de alerta</h3>
+    <script>
+        // window.alert("hola mundo")
+        // podemos omitir window
+        window.alert("hola mundo")
+    </script>
+</body>
+
+</html>
