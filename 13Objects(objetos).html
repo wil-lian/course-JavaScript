@@ -1,0 +1,19 @@
+<html>
+
+<body>
+    <h1>Objects(Objetos)</h1>
+    <p id="demo"></p>
+    <script>
+        const person = {
+            name: "william",
+            years: 30,
+            sex: "masculino",
+            funcion: function () {
+                return "My name is " + this.name + " and have " + this.years
+            }
+        }
+        document.getElementById("demo").innerHTML = person.funcion()
+    </script>
+</body>
+
+</html>
