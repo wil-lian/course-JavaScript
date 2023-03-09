@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <h1>Events(Eventos)</h1>
+    <h2>Evento en el mismo onclick</h2>
+    <!-- agregamos un onclick en el mismo boton y lo canbiamos depende a su id en un parrafo -->
+    <button onclick="document.getElementById('demo').innerHTML = Date()">Onclick</button>
+    <p id="demo"></p>
+    <br>
+    <h2>Evento con this</h2>
+    <button onclick="this.innerHTML = Date()">The time is:</button>
+    <br>
+    <h2>Evento con funcion</h2>
+    <button onclick="displayDate()">Push Me</button>
+    <script>
+        function displayDate() {
+            document.getElementById("demo2").innerHTML = Date()
+        }
+    </script>
+    <p id="demo2"></p>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<html>
+
+<body>
+    <h1>Strings(Cadenas)</h1>
+    <h2>Longitud de un String</h2>
+    <p id="demo"></p>
+
+    <p>NOTA: el parrafo no puede estar debajo de un script porque no agarraria el id demo el script</p>
+
+    <script>
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let tamaño = text.length
+        document.getElementById("demo").innerHTML = tamaño
+    </script>
+    <br>
+    <h2>Caracter de Escape</h2>
+    <p>Para comillas dobles</p>
+    <p id="x"></p><br>
+    <p>Para comillas simples</p>
+    <p id="y"></p><br>
+    <p>Para barra invertida</p>
+    <p id="z"></p>
+    <br>
+    <script>
+        let x = "william\""
+        let y = "fabricio\'"
+        let z = "tito\\"
+        document.getElementById("x").innerHTML = x;
+        document.getElementById("y").innerHTML = y;
+        document.getElementById("z").innerHTML = z;
+    </script>
+    <p>Otras secuencias de Escape</p>
+    <pre>
+        Code	Result
+          \b	Backspace
+          \f	Form Feed
+          \n	New Line
+          \r	Carriage Return
+          \t	Horizontal Tabulator
+          \v	Vertical Tabulator
+    </pre>
+
+    <h2>Ronper lineas de codigo largas</h2>
+    <script>
+        document.getElementById("demos").innerHTML =
+            "hola soy yo william"
+        document.getElementById("demos").innerHTML = "hola soy yo william" +
+            "and my name is fabricio"
+    </script>
+</body>
+
+</html>
