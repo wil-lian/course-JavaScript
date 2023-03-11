@@ -1,0 +1,64 @@
+<html>
+
+<body>
+    <h1>Strings Methods (Metodos de cadena)</h1>
+    <h2>length (longitud de cadena)</h2>
+    <p>devuelve la longitud de una cadena</p>
+    <p id="longitud"></p>
+    <script>
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        document.getElementById("longitud").innerHTML = text.length
+    </script>
+    <h2>Extraccion de parted de una Cadena</h2>
+    <h3>Metodo 1 slice(start, end)</h3>
+    <p id="extraccion"></p>
+    <script>
+        let name = "William Fabricio Tito Vargas"
+        document.getElementById("extraccion").innerHTML = name.slice(6, 9)
+        // tambien hay otros ejemplos
+        let texto = "mi nombre es sam y mi nombre es william fabricio tito vargas"
+        // Eliminara todo atras de la septima posicion
+        let part = texto.slice(7)
+        // si un parametro es negativo su posicion se cuenta desde el final de la linea
+        let part2 = texto.slice(-12)
+        // este ejmplo cortara desde la pocision -12 hasta la posicion -6
+        let part3 = texto.slice(-12, -6)
+    </script>
+    <h2>Substring de una cadena</h2>
+    <h3>Se toman los valores como 0</h3>
+    <script>
+        let nombres = "william fabricion tito vargas"
+        let sub = nombres.substring(6, 9)
+        // que es lo mismo que substr al igual solo se cuenta desde la posicion 7
+        let sub1 = nombres.substr(7)
+        let sb2 = nombres.substr(-4)
+    </script>
+    <h2>Sustitucino del contenido de la cadena</h2>
+    <script>
+        let marcas = "toyota HP oreo samsumg sony yamaha akita HP"
+        let convert = marcas.replace("toyota", "william")
+        // este metodo devuelve una nueva cadena
+        let convert1 = marcas.replace(/SAMSUMG/i, "aqui estoy")
+        let convert3 = marcas.replace(/HP/g, "alejandra")
+        // para reemplazar todas la coincidencias
+        let convert4 = marcas.replaceAll(/HP/g, "william")
+        console.log(convert4)
+    </script>
+    <h2>Convercion de mayusculas a minusculas</h2>
+    <script>
+        let mayus = "william"
+        let mayusConvert = mayus.toUpperCase()
+        let minus = "WILLIAM"
+        let mayusConvert2 = minus.toLowerCase()
+        console.log(mayusConvert2)
+    </script>
+    <h2>Concatenacion de una cadena</h2>
+    <script>
+        let texto1 = "william"
+        let texto2 = "fabricio"
+        let concate = texto1.concat("   ", texto2)
+        console.log(concate)
+    </script>
+</body>
+
+</html>
