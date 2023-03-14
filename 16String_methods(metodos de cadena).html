@@ -59,6 +59,43 @@
         let concate = texto1.concat("   ", texto2)
         console.log(concate)
     </script>
+    <h2>Recorte la cadena de JavaScript</h2>
+    <script>
+        let lagarto = "       hola william"
+        // esto recorta la variable y anula los campos vacios
+        let recorte = lagarto.trim()
+        //este metodo elimina les espacios blancos al principio de la cadena
+        let lagarto1 = "      hola william         "
+        let recorte2 = lagarto1.trimStart()
+        let recorte3 = lagarto1.trimEnd()
+        console.log(recorte3)
+    </script>
+    <h2>padStart() rellena una cadena con otra cadena</h2>
+    <script>
+        let relleno = "55"
+        // o tambien podemos hacerlo con una cadena string de numero(4, "0")
+        let padded = relleno.padStart(4, "x")
+        console.log(padded)
+    </script>
+    <h2>Para rellenar un numero primero convertimos el nuemro en una cadena</h2>
+    <script>
+        let numero = 5
+        let cadena = numero.toString()
+        let relleno1 = cadena.padStart(4, "h")
+        console.log(relleno1)
+    </script>
+    <h2>Metodo rellena una cadena con otra cadena al final</h2>
+    <script>
+        let texts = "56"
+        let relleno3 = texts.padEnd(7, "u")
+        console.log(relleno3)
+    </script>
+    <h2>Extraccion de caracterers de una cadena</h2>
+    <p id="prueba"></p>
+    <script>
+        let x = "HOLA MUNDO"
+        document.getElementById("prueba").innerHTML = x.charAt(5)
+    </script>
 </body>
 
 </html>
