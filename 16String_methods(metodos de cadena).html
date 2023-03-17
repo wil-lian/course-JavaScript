@@ -96,6 +96,42 @@
         let x = "HOLA MUNDO"
         document.getElementById("prueba").innerHTML = x.charAt(5)
     </script>
+    <h2>Cadena JavaScript charCodeAt</h2>
+    <p>Metodo devuelve el Unicode del caracter de un indice especificado de una cadena</p>
+    <p>el metodo devuelve el codigo UTF-16 un numero entero entre 0 y 65535</p>
+    <script>
+        let utf = "hola mundo"
+        let unicode = utf.charCodeAt(0)
+        console.log(unicode)
+    </script>
+    <h2>Acceso en la propiedad en cadenas</h2>
+    <script>
+        let firstName = "william"
+        let posicion = firstName[0]
+        console.log(posicion)
+    </script>
+    <h2>Convertir una cadena en una Matriz</h2>
+    <script>
+        let cadenaTexto = "a,b,c,d,e,f"
+        let array = cadenaTexto.split(",")
+        text.split(",")    // Split on commas
+        text.split(" ")    // Split on spaces
+        text.split("|")    // Split on pipe
+        console.log(array[3])
+    </script>
+    <h2>Convertir cadena en matriz con split sin espacios</h2>
+    <p id="look"></p>
+    <script>
+        let text4 = "william"
+        const array2 = text4.split("")
+
+        text4 = ""
+        for (let i = 0; i < array2.length; i++) {
+            text4 += array2[i] + "<br>"
+        }
+        document.getElementById("look").innerHTML = text4
+
+    </script>
 </body>
 
 </html>
