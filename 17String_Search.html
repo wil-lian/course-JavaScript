@@ -14,6 +14,27 @@
         let str2 = "tito vargas william fabricio"
         console.log(str2.lastIndexOf("tito"))
     </script>
+    <h2>Busqeda de cadenas de JavaScript</h2>
+    <script>
+        let text = "tito vargas william fabricio"
+        console.log("Aqui esta la cadena " + text.search("vargas"))
+        // console.log("Aqui esta la cadena " + text.search("/vargas/"))
+    </script>
+    <h2>Coincidencia de una cadena de JavaScript</h2>
+    <p id="demo"> </p>
+    <script>
+        let text2 = "william pedro roberto alejandro alejandra alejadrita  alejado de la realidad"
+        // let myArray = text2.match(/aleja/gi) no distingue entre mayusculas y minusculas
+        let myArray = text2.match(/aleja/g)
+        document.getElementById("demo").innerHTML = myArray.length + " " + myArray 
+    </script>
+    <h2>Metodo devuelve un iterator que contiene los resultados de hacer coincidir una cadena con otra cadena</h2>
+    <p id="match"></p>
+    <script>
+        let palabra = "william cats dog cats fly fly dog cats"
+        const iterador = palabra.matchAll("cats")
+        document.getElementById("match").innerHTML = iterador
+    </script>
 </body>
 
 </html>
